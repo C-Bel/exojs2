@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DAns le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ des que l'on appuie sur le clavier</title>
+  </head>
+  <body>
+    <form>
+   <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onkeyup="afficher()" />
+</form>
+    <script type="text/javascript">
+
+    function afficher() {
+      var msg = document.getElementById('nom').value;
+      alert(msg);
+    }
+    </script>
+  </body>
+</html>
