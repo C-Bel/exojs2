@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <img src="image1.jpg" onmouseover="swap('image3')" onmouseout="init('image1')" id="image1" />
+  <img src="image2.jpg" id="image2" />
+  <img src="image3.jpg" id="image3" />
+  <img src="image4.jpg" id="image4" />
+<img src="image5.jpg" id="image5" />
+
+<script type="text/javascript">
+
+  function swap(nouvelleImage){
+    document.images[0].src='image3.jpg';
+
+  }
+  function init(){
+    document.images[0].src='image1.jpg';
+  }
+
+
+</script>
+  </body>
+</html>
